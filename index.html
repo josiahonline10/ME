@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>AUJRC | Navigation Map</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="/images/Au-logo.png">
+        <link rel="stylesheet" href="css/landingpage.css">
+    </head>
+    <body>        
+        <section class="hero">
+            <img src="images/Au-logo.png" height="200" id="img1" id="img" id="img1">
+            <h1>Find Your Way Around School</h1>
+            <p>
+                A simple and interactive school navigation map that helps students,
+                teachers, and visitors find rooms and buildings easily.
+            </p>
+
+            <div class="buttons">
+                <a href="#" class="btn primary" onclick="openMap()">Open Map</a>
+                <a href="aboutus.html" class="btn secondary">About Us</a>
+            </div>
+            <div id="loadingScreen">
+                <div class="loader"></div>
+                <p>Loading Map, Please Wait...</p>
+            </div>
+        </section>
+            
+        <section class="features">
+            <h2>Why Use Our School Map?</h2>
+
+            <div class="cards">
+            <div class="card">
+                <div class="icon">📍</div>
+                    <h3>Easy Navigation</h3>
+                    <p>Quickly locate classrooms, offices, and school facilities.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🏫</div>
+                    <h3>Students</h3>
+                    <p>Designed with clear icons and layout for all students.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🗺️</div>
+                    <h3>Interactive Map</h3>
+                    <p>Explore your campus digitally with an easy to use map.</p>
+            </div>
+            </div>
+        </section>
+
+        <footer>
+            <b>@ARELLANO UNIVERSITY JOSE RIZAL CAMPUS CREATED BY: GROUP 4</b>
+        </footer>
+
+        <script>
+            function openMap() {
+            document.getElementById("loadingScreen").style.display = "flex";
+
+            setTimeout(() => {
+                window.location.href = "openmap.html";
+            }, 1000);
+            }
+        </script>
+    </body>
+</html>

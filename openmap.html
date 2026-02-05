@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Open Map</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="images/Au-logo.png">
+        <link rel="stylesheet" href="css/openmap.css">
+
+    </head>
+    <body>
+
+        <header class="project-header">
+        <div class="header-left">
+            <img src="images/Au-logo.png" height="80">
+        </div>
+
+        <h1>DIGITAL INTERACTIVE MAP WITH 3D VISUALIZATION</h1>
+
+        <div class="header-right">
+            <a href="index.html" class="header-btn">HOME</a>
+            <a href="aboutus.html" class="header-btn outline">ABOUT US</a>
+        </div>
+        </header>
+
+
+        <div class="main-wrapper">
+            <aside class="sidebar">
+                <section class="menu-box">
+                    <h3>Campus Facilities</h3>
+                    <ul>         
+                        <li data-location="Clinic">Clinic</li>
+                        <li data-location="SHS Building">SHS Building</li>
+                        <li data-location="Teachers Faculty">Teachers Faculty</li>   
+                        <li data-location="Principal Office">Principal Office</li>            
+                        <li data-location="Bursar">Bursar</li>
+                        <li data-location="Court/GYM">Court/GYM</li>
+                        <li data-location="Canteen">Canteen</li>
+                        <li data-location="Comfort Room">Comfort Room</li>
+                        <li data-location="Library">Library</li>
+                    </ul>
+                </section>
+
+                <section class="menu-box">
+                    <h3>Visualization</h3>
+                    <div class="toggle-group">
+                        <label><input type="radio" name="view"> 3D Visualization</label>
+                    </div>
+                </section>
+
+                <section class="info-box">
+                    <h3>Project Info</h3>
+                    <p>This map provides real time interactive navigation and 3D modeling of the AUJRC campus structures.</p>
+                </section>
+            </aside>
+
+            <main class="map-area">
+                <canvas id="map3d"></canvas>
+            </main>
+
+        </div>
+
+        <script src="https://unpkg.com/three@0.128.0/build/three.min.js"></script>
+        <script src="https://unpkg.com/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+        <script src="https://unpkg.com/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+        <script src="js/map3d.js"></script>
+
+    </body>
+</html>
